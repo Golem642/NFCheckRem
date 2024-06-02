@@ -1,4 +1,4 @@
-Ensure you have the latest Luma3DS version, then go into the folder corresponding to your console and download the .ips file.
+Ensure you have the latest Luma3DS version, then download the `0004013020004002.ips` file from this folder.
 
 Put this file into your SD card in the following folder : `/luma/sysmodules/`
 
