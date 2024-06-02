@@ -27,7 +27,7 @@ TL;DR : This removes all "if" constraints that prevent an unlocked tag from bein
 ## How does it work ?
 Documentation for the IPS file format : https://zerosoft.zophar.net/ips.php
 
-For example, the 3DS patch file is made like this :
+For example, the N3DS patch file is made like this :
 - 5 bytes : `PATCH` (`0x50 0x41 0x54 0x43 0x48`)
 - 3 bytes `0x02 0x23 0x74`, 2 bytes `0x00 0x06`, 6 bytes `0x00 0x46 0x00 0x2D 0x00 0x46`
 - 3 bytes `0x02 0x23 0x84`, 2 bytes `0x00 0x02`, 2 bytes `0x00 0x46`
@@ -46,7 +46,7 @@ The files names are the applications ID for the NFC service.
 
 The offsets are found by decompiling the code using Ghidra and using a bit of logic.
 
-Let's take the Nintendo 3DS patch file again for example :
+Let's take the New Nintendo 3DS patch file again for example :
   - Open GodMode9, press the HOME button -> Title manager -> NAND / TWL
   - Naviguate to 0004013000004002 or 0004013020004002 depending on your console model (Old or New)
   - Press (A) -> Open title folder
