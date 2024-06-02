@@ -61,7 +61,7 @@ These settings are set to match the 3DS CPU architecture, so that the code actua
 
 Execute all decompilation methods, then once it has done doing its shenanigans, go into the top bar -> Search -> Memory...
 
-Here, input the following values : `00 00 00 04 5F 00 00 00` then press "Search All". You will get multiple matches, select the first one and close the search windows
+Here, input the following values : `00 00 00 04 5F 00 00 00` then press "Search All". You will get multiple matches, select the second one and close the search windows
   - The values correspond to the last two "Must match" values found here : https://www.3dbrew.org/wiki/Amiibo#Page_layout
   - The selected portion is big enough to reduce potential false positives and small enough to not be annoying to write. Yes i am lazy
 
@@ -72,6 +72,8 @@ Still in the listing tab, if you scroll to the right of the selected data, you w
 These 2 "XREF" are indications that those values are used somewhere in the code, specifically in the FUN_00022364 function. Double click on that name and you made it inside the read-only check function, scroll back up a bit to find the actual start of the function
 
 ![image](https://github.com/Golem642/NFCheckRem/assets/65229557/3c73212e-e669-45ff-a8a5-b630c165c8e3)
+
+If you're wondering why we didn't choose the first search result, it is because the function it is linked to doesn't seem to have any references to it. If you look above, you can see an XREF[1] at the end of the FUN_00022364 line, whereas if you go to the function of the other search result there will be none, therefore meaning this function is seemingly unused.
 
 Now it's pure logic and following the flow of the code. Everytime you see a reference to a LAB_000XXXXX, it means it's a conditional jump. And everytime that happens, you need to check by double clicking on that LAB name whether this jump goes to continue the function's code or to exit it.
 
