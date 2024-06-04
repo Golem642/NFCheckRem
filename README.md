@@ -7,6 +7,9 @@ Put this file into your SD card in the following folder : `/luma/sysmodules/` th
 - Wii U : (not yet implemented)
 - Switch : (not yet implemented)
 
+### Note for 3DS users
+The patch will do nothing if wumiibo is enabled, ensure wumiibo is disabled before attempting to scan any Amiibo or NFC tag
+
 # Why ?
 When writing an Amiibo to a blank Ntag215 NFC tag with an app such as [TagMo](https://github.com/HiddenRamblings/TagMo), the tag will become read-only on some parts of the data.
 
