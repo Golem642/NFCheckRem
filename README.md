@@ -18,6 +18,10 @@ This data includes the Amiibo game character id, variant, figure type, model num
 
 This means that if it's read-only, you cannot change the figure stored on the NFC tag, which therefore mean having to buy multiple tags for every Amiibo you want.
 
+# Can't I just use Wumiibo/re_nfpii ?
+Well yes but sometimes games won't like when you open their menu and give you intense lag until you restart it, making those amiibo emulation apps unusable on those games.
+Moreover, this solution will give you the possibility to have physical tags, so you get the original experience with a few more features + you can easily share it with others as long as they have the patch too
+
 # What does this do ?
 This modifies the NFC system module to disable the checks that are made on those areas, yes the console checks if the tag is read-only.
 
